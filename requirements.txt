@@ -1,0 +1,7 @@
+flask==2.0.1
+requests==2.25.1
+pandas==1.2.4
+SQLAlchemy==1.4.15
+pydantic==1.8.2
+fastapi==0.68.1
+uvicorn==0.15.0
