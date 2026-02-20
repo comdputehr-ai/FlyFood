@@ -1,0 +1,153 @@
+{
+  "timestamp": "2026-02-20T10:28:37.417906",
+  "total_tests": 29,
+  "passed_tests": 29,
+  "success_rate": 1.0,
+  "results": [
+    {
+      "test": "Seed initial data",
+      "success": true,
+      "details": ""
+    },
+    {
+      "test": "Get cities list",
+      "success": true,
+      "details": ""
+    },
+    {
+      "test": "Cities contain all expected values",
+      "success": true,
+      "details": ""
+    },
+    {
+      "test": "Register new user",
+      "success": true,
+      "details": ""
+    },
+    {
+      "test": "Token received from registration",
+      "success": true,
+      "details": ""
+    },
+    {
+      "test": "Get current user info",
+      "success": true,
+      "details": ""
+    },
+    {
+      "test": "Get all restaurants",
+      "success": true,
+      "details": ""
+    },
+    {
+      "test": "Get restaurants by city (\u0414\u0443\u0448\u0430\u043d\u0431\u0435)",
+      "success": true,
+      "details": ""
+    },
+    {
+      "test": "Get specific restaurant",
+      "success": true,
+      "details": ""
+    },
+    {
+      "test": "Get restaurant menu",
+      "success": true,
+      "details": ""
+    },
+    {
+      "test": "Get menu categories",
+      "success": true,
+      "details": ""
+    },
+    {
+      "test": "Search restaurants",
+      "success": true,
+      "details": ""
+    },
+    {
+      "test": "Filter by cuisine",
+      "success": true,
+      "details": ""
+    },
+    {
+      "test": "Get empty cart",
+      "success": true,
+      "details": ""
+    },
+    {
+      "test": "Get restaurants for cart test",
+      "success": true,
+      "details": ""
+    },
+    {
+      "test": "Get menu items for cart test",
+      "success": true,
+      "details": ""
+    },
+    {
+      "test": "Add item to cart",
+      "success": true,
+      "details": ""
+    },
+    {
+      "test": "Update cart item quantity",
+      "success": true,
+      "details": ""
+    },
+    {
+      "test": "Get restaurants for order test",
+      "success": true,
+      "details": ""
+    },
+    {
+      "test": "Get menu items for order test",
+      "success": true,
+      "details": ""
+    },
+    {
+      "test": "Add item to cart for order",
+      "success": true,
+      "details": ""
+    },
+    {
+      "test": "Create order with cash payment",
+      "success": true,
+      "details": ""
+    },
+    {
+      "test": "Get order details",
+      "success": true,
+      "details": ""
+    },
+    {
+      "test": "Get user orders list",
+      "success": true,
+      "details": ""
+    },
+    {
+      "test": "Get restaurants for favorites test",
+      "success": true,
+      "details": ""
+    },
+    {
+      "test": "Add restaurant to favorites",
+      "success": true,
+      "details": ""
+    },
+    {
+      "test": "Check favorite status",
+      "success": true,
+      "details": ""
+    },
+    {
+      "test": "Get favorites list",
+      "success": true,
+      "details": ""
+    },
+    {
+      "test": "Remove from favorites",
+      "success": true,
+      "details": ""
+    }
+  ]
+}
