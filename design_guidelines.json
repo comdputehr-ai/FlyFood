@@ -1,0 +1,219 @@
+{
+  "design_system": {
+    "identity": {
+      "name": "Dushanbe Eats",
+      "archetype": "Organic & Earthy + Swiss Clarity",
+      "emotion": "Hunger, Trust, Speed, Delight",
+      "theme_strategy": "Light Mode Dominant (Appetizing) with Dark Mode Support"
+    },
+    "typography": {
+      "font_family": {
+        "headings": "Manrope, sans-serif",
+        "body": "Inter, sans-serif",
+        "accent": "Caveat, cursive"
+      },
+      "scale": {
+        "h1": "text-4xl md:text-6xl font-bold tracking-tight leading-none",
+        "h2": "text-3xl md:text-4xl font-bold tracking-tight",
+        "h3": "text-2xl md:text-3xl font-semibold",
+        "body_lg": "text-lg leading-relaxed",
+        "body_base": "text-base leading-relaxed",
+        "caption": "text-sm text-muted-foreground uppercase tracking-wider"
+      },
+      "rules": [
+        "Use Manrope for all headings to ensure a modern, geometric feel.",
+        "Use Inter for all body text for maximum legibility.",
+        "Use Caveat sparingly for 'Chef's Choice' or 'Special Offer' tags to add a human touch.",
+        "Headings must be tight (tracking-tight).",
+        "Prices must be prominent and bold (e.g., text-xl font-bold text-primary)."
+      ]
+    },
+    "colors": {
+      "palette": {
+        "primary": {
+          "DEFAULT": "#FF5500",
+          "foreground": "#FFFFFF",
+          "hover": "#E64D00",
+          "description": "Vibrant Orange - Stimulates appetite, high visibility for CTAs."
+        },
+        "secondary": {
+          "DEFAULT": "#10B981",
+          "foreground": "#FFFFFF",
+          "description": "Fresh Emerald - Used for 'Vegetarian', 'Healthy', and Success states."
+        },
+        "accent": {
+          "DEFAULT": "#F5F5F0",
+          "foreground": "#1A1A1A",
+          "description": "Bone White - Warm neutral background for sections to avoid clinical white."
+        },
+        "background": {
+          "light": "#FFFFFF",
+          "dark": "#0A0A0A"
+        },
+        "surface": {
+          "light": "#FFFFFF",
+          "dark": "#171717"
+        },
+        "text": {
+          "main": "#1A1A1A",
+          "muted": "#737373"
+        }
+      },
+      "gradients": {
+        "hero_overlay": "linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 100%)",
+        "brand_accent": "linear-gradient(135deg, #FF5500 0%, #FF8800 100%)"
+      },
+      "rules": [
+        "NEVER use the primary orange for backgrounds. Use it for Buttons, Prices, and Icons only.",
+        "Use the 'Bone White' (#F5F5F0) for secondary section backgrounds to create depth.",
+        "Food images must have a subtle shadow, not a hard border.",
+        "Success messages (Order Delivered) use Emerald Green."
+      ]
+    },
+    "visual_enhancers": {
+      "radius": {
+        "default": "rounded-xl",
+        "card": "rounded-2xl",
+        "button": "rounded-full"
+      },
+      "shadows": {
+        "card": "shadow-[0_8px_30px_rgb(0,0,0,0.04)]",
+        "hover": "shadow-[0_8px_30px_rgb(0,0,0,0.12)]",
+        "floating": "shadow-[0_20px_50px_rgba(0,0,0,0.1)]"
+      },
+      "glassmorphism": {
+        "nav": "bg-white/80 backdrop-blur-md border-b border-black/5",
+        "overlay": "bg-black/20 backdrop-blur-sm"
+      },
+      "borders": {
+        "subtle": "border border-black/5",
+        "active": "border-2 border-primary"
+      }
+    },
+    "components": {
+      "buttons": {
+        "primary": "bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-8 py-6 font-bold shadow-lg hover:shadow-xl transition-all active:scale-95",
+        "secondary": "bg-secondary/10 text-secondary hover:bg-secondary/20 rounded-full px-6 py-4 font-semibold transition-all",
+        "outline": "border-2 border-input bg-transparent hover:bg-accent hover:text-accent-foreground rounded-full px-6 py-4 font-semibold"
+      },
+      "cards": {
+        "restaurant": "group relative overflow-hidden rounded-2xl bg-card border border-border/40 shadow-sm hover:shadow-md transition-all duration-300",
+        "food_item": "flex flex-col gap-4 p-4 rounded-2xl bg-white border border-black/5 hover:border-primary/20 transition-colors"
+      },
+      "inputs": {
+        "default": "h-12 rounded-xl border-input bg-background px-4 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+      },
+      "badges": {
+        "rating": "bg-yellow-100 text-yellow-700 px-2 py-1 rounded-lg text-xs font-bold flex items-center gap-1",
+        "delivery_time": "bg-blue-50 text-blue-700 px-2 py-1 rounded-lg text-xs font-bold"
+      }
+    },
+    "grids": {
+      "bento_menu": "grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4",
+      "restaurant_list": "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8",
+      "detail_page": "grid grid-cols-1 lg:grid-cols-12 gap-8"
+    },
+    "layouts": {
+      "container": "container mx-auto px-4 md:px-6 lg:px-8 max-w-7xl",
+      "section_spacing": "py-12 md:py-20 lg:py-24",
+      "mobile_nav": "fixed bottom-0 left-0 right-0 bg-white/90 backdrop-blur-lg border-t border-black/5 p-4 z-50 flex justify-around items-center md:hidden"
+    },
+    "motion": {
+      "hover_lift": "transition-transform duration-300 hover:-translate-y-1",
+      "fade_in": "animate-in fade-in duration-500",
+      "slide_up": "animate-in slide-in-from-bottom-4 duration-500",
+      "button_press": "active:scale-95 transition-transform duration-100"
+    },
+    "accessibility": {
+      "contrast": "Ensure all text meets WCAG AA standards. Use dark gray (#1A1A1A) on white, not pure black.",
+      "focus_states": "Visible focus rings (ring-2 ring-primary) on all interactive elements.",
+      "aria_labels": "Required for all icon-only buttons (e.g., 'Add to Cart', 'Favorite')."
+    },
+    "media": {
+      "image_urls": {
+        "hero_food": [
+          {
+            "url": "https://images.unsplash.com/photo-1603076218042-64efad4281b5?crop=entropy&cs=srgb&fm=jpg&q=85",
+            "alt": "Delicious Tajik Plov Plate",
+            "category": "hero"
+          },
+          {
+            "url": "https://images.unsplash.com/photo-1614778168922-ab1cdf04800e?crop=entropy&cs=srgb&fm=jpg&q=85",
+            "alt": "Traditional Plov",
+            "category": "hero"
+          }
+        ],
+        "categories": [
+          {
+            "url": "https://images.unsplash.com/photo-1541592391523-5ae8c2c88d10?crop=entropy&cs=srgb&fm=jpg&q=85",
+            "alt": "Gourmet Burger",
+            "category": "fast_food"
+          },
+          {
+            "url": "https://images.unsplash.com/photo-1513615147033-3ed2afaaae8f?crop=entropy&cs=srgb&fm=jpg&q=85",
+            "alt": "Fresh Sushi",
+            "category": "asian"
+          },
+          {
+            "url": "https://images.unsplash.com/photo-1695088957322-e253097aa640?crop=entropy&cs=srgb&fm=jpg&q=85",
+            "alt": "Dessert Cheesecake",
+            "category": "dessert"
+          }
+        ],
+        "courier": [
+          {
+            "url": "https://images.unsplash.com/photo-1758445043309-ce680c326a6c?crop=entropy&cs=srgb&fm=jpg&q=85",
+            "alt": "Delivery Courier on Scooter",
+            "category": "tracking"
+          }
+        ],
+        "restaurants": [
+          {
+            "url": "https://images.unsplash.com/photo-1765894711185-63800b16dbba?crop=entropy&cs=srgb&fm=jpg&q=85",
+            "alt": "Modern Restaurant Interior",
+            "category": "restaurant_cover"
+          },
+          {
+            "url": "https://images.unsplash.com/photo-1758426637742-80bd0f983611?crop=entropy&cs=srgb&fm=jpg&q=85",
+            "alt": "Cozy Cafe Interior",
+            "category": "restaurant_cover"
+          }
+        ]
+      },
+      "rules": [
+        "Images must be high resolution and appetizing.",
+        "Use 'object-cover' for all image containers to prevent distortion.",
+        "Add a subtle gradient overlay (bg-gradient-to-t from-black/60 to-transparent) on images with text overlays."
+      ]
+    },
+    "instructions_to_main_agent": {
+      "setup": [
+        "Install 'lucide-react' for icons.",
+        "Install 'clsx' and 'tailwind-merge' for dynamic classes.",
+        "Ensure 'Manrope' font is imported in index.css or index.html."
+      ],
+      "implementation_strategy": [
+        "Start with the Mobile Layout first. The app is primarily for phone users.",
+        "Create a 'Layout' component that handles the sticky bottom nav on mobile and sidebar on desktop.",
+        "Use the 'Card' component from Shadcn but heavily customize it with the 'visual_enhancers' rules (rounded-2xl, soft shadows).",
+        "For the Menu, use a sticky category header that slides as the user scrolls.",
+        "The Cart should be a slide-over drawer on desktop and a full page or bottom sheet on mobile."
+      ],
+      "critical_reminders": [
+        "Do not use generic blue for primary actions. Use the Brand Orange (#FF5500).",
+        "Ensure touch targets are at least 44px for mobile users.",
+        "Use Skeleton loaders (Shadcn Skeleton) while data is fetching. Never show a blank screen."
+      ]
+    },
+    "universal_guidelines": {
+      "general": [
+        "Avoid 'AI Slop' - generic, centered, boring layouts.",
+        "Create depth with z-index and shadows.",
+        "Micro-animations are mandatory for every interaction.",
+        "Use generous spacing (p-6, p-8) to let the food photos breathe."
+      ],
+      "toasts": "Use 'sonner' for all notifications (Order added, Payment success).",
+      "testing": "Add 'data-testid' to all interactive elements."
+    }
+  }
+}
